@@ -14,9 +14,15 @@ function getFromServer(e){
   }
 
 function mydata(data){
-  console.log(data);
-  //var text =  `<p class="display-1"> custId: ${data.custId}, Pass: ${data.pwd},  Name: ${data.name}, Gender: ${data.gender} </p>`;
-  $(".mypanel").html(data);
+  //console.log(data);
+  if (data == true) {
+    window.location.href = "welcome.html" 
+  }
+  else {
+    var text = "<p>Try Again </p>";
+    $(".mypanel").html(text);
+  }
+  
 }
 b1.addEventListener('click',getFromServer);
 
