@@ -14,12 +14,10 @@ function getFromServer(e){
 
 function mydata(data){
   var item = data[0];
-  var text =  `<p class="display-1"> Account: ${item.user_id}, ${item.first_name} ${item.last_name}  
-              <br> Email: ${item.email} </p>`
+  var text =  `<p class="display-1"> custId: ${item.custId}, Pass: ${item.pwd},  Name: ${item.name}, Gender: ${item.gender} </p>`
   $(".mypanel").html(text);
 }
 b1.addEventListener('click',getFromServer);
 
 
 
-   
