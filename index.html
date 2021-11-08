@@ -1,67 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <title>Connect to backend</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-    <meta
-      property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
-    <meta name="twitter:card" content="summary" />
-
  
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <title>Read Data from Server</title>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+    <!-- My sample pages -->
   </head>
- 
   <body>
-      <div>
-        <H1> READ USER DATA FROM API SERVER - SHOPPING APP - NUS STORE  </H1>
-        <h2> Note: MOCK API is created in https://nusstore.glitch.me </h2>
-
+    <form id="form">
+      <div class="form-control">
+        <label for="cuserid">Customer ID</label>    
+        <input type="text" id="userid" placeholder="Enter user id..." />
       </div>
-    <div class="mypanel">
-           
+      <button type="button" id = "b1" class="btn btn-primary">getUser</button>
+    </form>
+    <div class="mypanel">             
+    
     </div>
      
-      <button class = "btn btn-info" onclick="getFromServer()">Accounts</button>  
+
+
+    <script src="getdata.js"></script>
     
   </body>
-    
-    
-  </body>
-</html>
