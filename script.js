@@ -10,7 +10,7 @@ function getFromServer(e){
   e.preventDefault();       //?
   var querryStr =  "https://nusstore.glitch.me/login?custId=" + uid.value + "&pwd=" + pass.value;
   console.log (querryStr);
-  $.getJSON(querryStr, mydata );
+  $.getJSON(querryStr, mydata);
   }
 
 function mydata(data){
