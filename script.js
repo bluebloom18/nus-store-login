@@ -2,7 +2,7 @@
 //AJAX library  fdas,mnfmnasd
 ///fdslnf dsfnj
 
-const uid = document.getElementById('userid');
+const uid = document.getElementById('custId');
 const b1 = document.getElementById('b1');
 
 function getFromServer(e){
