@@ -3,19 +3,19 @@
 ///fdslnf dsfnj
 
 const uid = document.getElementById('custId');
+const pass = document.getElementById('pwd');
 const b1 = document.getElementById('b1');
 
 function getFromServer(e){
   e.preventDefault();       //?
-  var querryStr =  "https://nusstore.glitch.me/findcust?custId=" + uid.value;
+  var querryStr =  "https://nusstore.glitch.me/cust?custId=" + uid.value + "pwd=" + pass.value;
   console.log (querryStr);
   $.getJSON(querryStr, mydata );
   }
 
 function mydata(data){
   console.log(data);
-  var item = data[0];
-  var text =  `<p class="display-1"> custId: ${item.custId}, Pass: ${item.pwd},  Name: ${item.name}, Gender: ${item.gender} </p>`
+  var text =  `<p class="display-1"> custId: ${data.custId}, Pass: ${data.pwd},  Name: ${data.name}, Gender: ${data.gender} </p>`;
   $(".mypanel").html(text);
 }
 b1.addEventListener('click',getFromServer);
