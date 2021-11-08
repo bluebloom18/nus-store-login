@@ -7,7 +7,7 @@ const b1 = document.getElementById('b1');
 
 function getFromServer(e){
   e.preventDefault();       //?
-  var querryStr =  "https://nusstore.glitch.me/cust?user_id=" + uid.value;
+  var querryStr =  "https://nusstore.glitch.me/findcust?custId=" + uid.value;
   //console.log (querryStr);
   $.getJSON(querryStr, mydata );
   }
