@@ -13,7 +13,7 @@ function getFromServer(e){
   $.getJSON(querryStr, mydata);
   }
 
-function mydata(data){
+function mydata(data){    
   //console.log(data);
   if (data == true) {
     window.location.href = "welcome.html" 
